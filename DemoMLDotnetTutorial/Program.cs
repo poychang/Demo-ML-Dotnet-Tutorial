@@ -7,8 +7,8 @@
     {
         public static void Main(string[] args)
         {
-            IrisPredictionModel.Training();
             MachineStatusPredictionModel.Training();
+            IrisPredictionModelV05.Training();
         }
     }
 }

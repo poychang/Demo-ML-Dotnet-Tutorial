@@ -8,7 +8,7 @@ using System.IO;
 
 namespace DemoMLDotnetTutorial
 {
-    public class IrisPredictionModel
+    public class IrisPredictionModelV05
     {
         // STEP 1: 定義資料模型
 
@@ -62,7 +62,7 @@ namespace DemoMLDotnetTutorial
 
             // STEP 4: 設定學習器
             // 將要作為學習方法的演算法加入 pipeline 中
-            // 這是一個分類的場景，使用 StochasticDualCoordinateAscentClassifier 作為分類方案，預測該鳶尾花是哪種類別
+            // 這是一個分類的場景，使用隨機雙坐標上升分類器 (Stochastic Dual Coordinate Ascent Classifier) 作為分類方案，預測該鳶尾花是哪種類別
             pipeline.Add(new StochasticDualCoordinateAscentClassifier());
 
             // 將標籤轉換回原始文字（在 STEP 3 曾將他轉換成數字）
